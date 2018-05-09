@@ -39,20 +39,11 @@ h2 {
 	font-size: 40px;
 }
 h3 {
-	margin-top: -1px;
 	color: black;
 	font-size: 30px;
 }
-h4 {
-	color: #fff;
-	text-shadow: -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-	font-size: 15px;
-}
 div.letter {
-	background-color: #b2ccea;
+	background-color: powderblue;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -61,23 +52,5 @@ p {
 	width: 80%;
 	font-size: 17px;
 	font-family: helevtica;
-}
-a:link, a:visited {
-	margin-top: 11px;
-	margin-left: 10px;
-	padding: 3px;
-	font-size: 17px;
-	color: black;
-	text-decoration: none;
-	text-align: center;
-	display: inline-block;
-}
-a:hover {
-	color:gray;
-	box-shadow: 0px 3px 0 #000;
-}
-.header {
-	padding: 5px;
-	padding-bottom: 15px;
 }
 
