@@ -1,9 +1,14 @@
 body {
-	background-color: powderblue;
+	font-family: helvetica; 
+}
+header {
+	background: #2d6360 50% 0 url(neural.jpg) no-repeat;
 }
 h1 {
+	background-color: powderblue; 
 	color:white;
+	border: 1px dotted white;
 }
-p {
+h2 {
 	color:black;
 }
