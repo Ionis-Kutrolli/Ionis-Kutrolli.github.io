@@ -44,6 +44,8 @@ h3 {
 }
 div.letter {
 	background-color: powderblue;
+	margin-right: auto;
+	margin-left: auto;
 }
 p {
 	margin: 0 auto;
