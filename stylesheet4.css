@@ -10,9 +10,9 @@ body {
 header {
 	height: 300px;
 
-	background: #2d6360 100% 0 url(island-.png) no-repeat;
+	background: #2d6360 100% 0 url(rocks-.jpg) no-repeat;
 
-	background-image: url(island-.png);
+	background-image: url(rocks-.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -21,49 +21,49 @@ header {
 	border: 10px solid black;
 }
 h1 {
-	color: #fff;
-	text-shadow: -1px -1px 0 #000,
+  color: #fff;
+  text-shadow: -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
-	padding: 0 10%;
-  	margin: 40px 0;
-  	font-size: 80px;
+  padding: 0 10%;
+    margin: 40px 0;
+    font-size: 80px;
 }
 h2 {
-	color: #fff;
-	text-shadow: -1px -1px 0 #000,
+  color: #fff;
+  text-shadow: -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
-	font-size: 40px;
+  font-size: 40px;
 }
 h3 {
-	margin-top: -1px;
-	color: black;
-	font-size: 30px;
+  margin-top: -1px;
+  color: black;
+  font-size: 30px;
 }
 h4 {
-	color: #fff;
-	text-shadow: -1px -1px 0 #000,
+  color: #fff;
+  text-shadow: -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
-	font-size: 15px;
+  font-size: 15px;
 }
 h5 {
-	color: #000;
-	font-size:20px;
-	margin-left: auto;
-	margin-right: auto;
-	font-family: helevetica;
-	font-weight: bold;
+  color: #000;
+  font-size:20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: helevetica;
+  font-weight: bold;
 }
  p {
-	margin: 0;
+  margin: 0;
   margin-top: 5px;
-	font-family: helevtica;
-	width: 80%;
+  font-family: helevtica;
+  width: 80%;
 }
 .explanation p{
   margin-top: 30px;
@@ -87,8 +87,8 @@ a {
     text-decoration: none;
   }
 .header {
-	padding: 5px;
-	padding-bottom: 15px;
+  padding: 5px;
+  padding-bottom: 15px;
 }
 .sidebar {
   background: #edf4f0;
@@ -110,18 +110,18 @@ a {
   overflow: hidden;
 }
 .design-selection li {
-	margin 0;
+  margin 0;
 }
 .design-selection li {
-	float: left;
-	width: 50%;
-	padding: 1.5em 10%;
-	border-top: solid 1px #d9e3dc;
-	color: #c0cac3;
-	font-style: italic;
+  float: left;
+  width: 50%;
+  padding: 1.5em 10%;
+  border-top: solid 1px #d9e3dc;
+  color: #c0cac3;
+  font-style: italic;
 }
 .design-selection li:hover, .design-selection li:focus {
-	background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+  background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,0.5)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
     background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
     background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%); /* Opera 11.10+ */
@@ -129,16 +129,16 @@ a {
     background: linear-gradient(to right,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%); /* W3C */
 }
 .design-selection li:nth-child(2n+1) {
-	clear: left;
+  clear: left;
 }
 
 .design-selection, li.viewall a {
-	display: block;
-	margin-bottom: 0.25em;
-	font-family: 'Julius Sans One', sans-serif;
-	font-size: 1.2em;
-	font-style: normal;
-	text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.25em;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.2em;
+  font-style: normal;
+  text-transform: uppercase;
 }
 
 
@@ -192,7 +192,7 @@ a {
     content: "";
     width: 125px;
     height: 125px;
-    margin: -65px 85px 0 0;
+    margin: -65px 195px 0 0;
     background-size: 100%;
     opacity: 0.6;
   }
@@ -214,18 +214,18 @@ a {
     opacity: 0.6;
   }
   h4 {
- 	display: block;
- 	position: relative;
+  display: block;
+  position: relative;
     margin: 10px 0px;
     padding: 0 0 5px 0;
- 	}
-	h4::before{
-		display: inline-block;
-		position: relative; content: "";
-		width: 125px;
-		height: 0px;
-		margin: -65px 290px 0 0;
-	}
+  }
+  h4::before{
+    display: inline-block;
+    position: relative; content: "";
+    width: 125px;
+    height: 0px;
+    margin: -65px 290px 0 0;
+  }
   p {
     font-size: 1em;
   }
@@ -233,37 +233,8 @@ a {
   nav, .supporting {
     display: inline;
   }
-    .Poem-1 h3{
-  	background-color: #fff;
-  	margin-bottom: -30px;
-  	margin-top: 1px;
-  	width: 66%;
-    padding: 1em 5% 1em 5%;
-	margin-right: 0;
-	margin-left: 0;
-  }
-  .Poem-2 h3{
-    background-color: #fff;
-    margin-bottom: -30px;
-    margin-top: 1px;
-    width: 66%;
-    padding: 1em 5% 1em 5%;
-  margin-right: 0;
-  margin-left: 0;
-  }
-  .Poem-3 h3{
-    background-color: #fff;
-    margin-bottom: -30px;
-    margin-top: 1px;
-    width: 66%;
-    padding: 1em 5% 1em 5%;
-  margin-right: 0;
-  margin-left: 0;
-  }
-  .wnb-1 h3, .wnb-2 h3, .wnb-3 h3,
-  .wnb-4 h3, .wnb-5 h3, .wnb-6 h3,
-  .wnb-7 h3, .wnb-8 h3, .wnb-9 h3,
-  .wnb-10 h3{
+  .memoir h3, .college-essay h3, .analytical-piece h3,
+  .short-story h3{
     background-color: #fff;
     margin-bottom: -30px;
     margin-top: 1px;
@@ -272,13 +243,11 @@ a {
   margin-right: 0;
   margin-left: 0;
   } 
-   .wnb-1 h5, .wnb-2 h5, .wnb-3 h5,
-  .wnb-4 h5, .wnb-5 h5, .wnb-6 h5,
-  .wnb-7 h5, .wnb-8 h5, .wnb-9 h5,
-  .wnb-10 h5{
-    margin-top: -30px;
+
+  h5 {
+    margin-top:-20px;
   }
- .wnb p {
+ .writing p {
   border-bottom: 3px dotted gray;
   padding-bottom: 2px;
   margin-bottom: 30px;
@@ -331,4 +300,3 @@ a {
     font-size: 72px;
   }
 }
-                                                                                                         /* 1000 lines?! */
