@@ -86,6 +86,13 @@ a {
     color: #0599c2;
     text-decoration: none;
   }
+    .reflection p, .reflection h3, .closing-letter p ,.closing-letter h3{
+  background-attachment: scroll, scroll, fixed;
+  background-color: rgba(100,0,0,0.5);
+  background-image: url(contours-opaque.png), url(gridlines-opaque.png), url(bamboo.png);
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: auto, auto, cover;
+}
 .header {
   padding: 5px;
   padding-bottom: 15px;

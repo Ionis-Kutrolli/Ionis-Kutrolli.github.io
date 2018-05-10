@@ -86,6 +86,85 @@ a {
     color: #0599c2;
     text-decoration: none;
   }
+  /* coloured cutoff */
+  .Poem-1, .Poem-2, .Poem-3{
+  background-attachment: scroll, scroll, fixed;
+  background-color: rgba(255,255,255,0.5);
+  background-image: url(contours-opaque.png), url(gridlines-opaque.png), url(bamboo.png);
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: auto, auto, cover;
+}
+.wnb-2 p, h3 {
+  background-attachment: scroll, scroll, fixed;
+  background-color: rgba(138,188,159,0.5);
+  background-image: url(contours-opaque.png), url(gridlines-opaque.png), url(bamboo.png);
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: auto, auto, cover;
+}
+.wnb-1 p {
+  background-attachment: scroll, scroll, fixed;
+  background-color: rgba(255,102,102,0.5);
+  background-image: url(contours-opaque.png), url(gridlines-opaque.png), url(bamboo.png);
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: auto, auto, cover;
+}
+
+.wnb-3 p {
+  background-attachment: scroll, scroll, fixed;
+  background-color: rgba(102,102,255,0.5);
+  background-image: url(contours-opaque.png), url(gridlines-opaque.png), url(bamboo.png);
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: auto, auto, cover;
+}
+.wnb-4 p {
+  background-attachment: scroll, scroll, fixed;
+  background-color: rgba(210,142,255,0.5);
+  background-image: url(contours-opaque.png), url(gridlines-opaque.png), url(bamboo.png);
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: auto, auto, cover;
+}
+.wnb-5 p {
+  background-attachment: scroll, scroll, fixed;
+  background-color: rgba(142,255,236,0.5);
+  background-image: url(contours-opaque.png), url(gridlines-opaque.png), url(bamboo.png);
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: auto, auto, cover;
+}
+.wnb-6 p {
+  background-attachment: scroll, scroll, fixed;
+  background-color: rgba(0,0,0,0.5);
+  background-image: url(contours-opaque.png), url(gridlines-opaque.png), url(bamboo.png);
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: auto, auto, cover;
+}
+.wnb-7 p {
+  background-attachment: scroll, scroll, fixed;
+  background-color: rgba(252,202,148,0.5);
+  background-image: url(contours-opaque.png), url(gridlines-opaque.png), url(bamboo.png);
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: auto, auto, cover;
+}
+.wnb-8 p {
+  background-attachment: scroll, scroll, fixed;
+  background-color: rgba(100,150,100,0.5);
+  background-image: url(contours-opaque.png), url(gridlines-opaque.png), url(bamboo.png);
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: auto, auto, cover;
+}
+.wnb-9 p {
+  background-attachment: scroll, scroll, fixed;
+  background-color: rgba(255,247,175,0.5);
+  background-image: url(contours-opaque.png), url(gridlines-opaque.png), url(bamboo.png);
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: auto, auto, cover;
+}
+.wnb-10 p {
+  background-attachment: scroll, scroll, fixed;
+  background-color: rgba(150,150,150,0.5);
+  background-image: url(contours-opaque.png), url(gridlines-opaque.png), url(bamboo.png);
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: auto, auto, cover;
+}
 .header {
 	padding: 5px;
 	padding-bottom: 15px;
@@ -272,11 +351,9 @@ a {
   margin-right: 0;
   margin-left: 0;
   } 
-   .wnb-1 h5, .wnb-2 h5, .wnb-3 h5,
-  .wnb-4 h5, .wnb-5 h5, .wnb-6 h5,
-  .wnb-7 h5, .wnb-8 h5, .wnb-9 h5,
-  .wnb-10 h5{
+    h5{
     margin-top: -30px;
+    margin-bottom:0;
   }
  .wnb p {
   border-bottom: 3px dotted gray;
@@ -286,6 +363,23 @@ a {
     clear: left;
     width: 66%;
   }
+  .Poem-1 img{
+    position:relative;
+    max-height: 25%;
+    max-width: 25%;
+    margin-bottom:-250px;
+    left:400px;
+    top:-300px;
+  }
+  .Poem-2 img{
+    position:relative;
+    max-height: 25%;
+    max-width: 25%;
+    margin-bottom:-250px;
+    left:400px;
+    top:-350px;
+  }
+ 
  .explanation p {
   border-bottom: 3px dotted gray;
   padding-bottom: 2px;
