@@ -18,10 +18,15 @@
 			renderer.setSize( window.innerWidth, window.innerHeight );
 			document.body.appendChild( renderer.domElement );
 
-			var geometry = new THREE.BoxGeometry();
+			import * as THREE from 'three';
+            import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
+
+            const scene = new THREE.Scene();
+            var loader = new GLTFLoader();
+            loader.load('assets\models\floorplan.glb', function (gtlf){scene.add(gtlf.scene)}, undefined, function(error){console.error(error)});
 			var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-			var cube = new THREE.Mesh( geometry, material );
-			scene.add( cube );
+		
+			
 
 			camera.position.z = 5;
 
