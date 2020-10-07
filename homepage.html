@@ -10,8 +10,8 @@
     </head>
     <body>
         <script src="js/three.js"></script>
-        <script>
-  
+        <script src="node_modules/three/examples/jsm/loaders/GLTFLoader.js">
+            
 
             var scene = new THREE.Scene();
 			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
@@ -22,8 +22,8 @@
 
 
 
-            const scene = new THREE.Scene();
-            var loader = new GLTFLoader();
+            
+            var loader = new THREE.GLTFLoader();
             loader.load('assets\models\floorplan.glb', function (gtlf){scene.add(gtlf.scene)}, undefined, function(error){console.error(error)});
 			var material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
 		
