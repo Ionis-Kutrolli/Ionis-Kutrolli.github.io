@@ -33,7 +33,9 @@
 			var cube = new THREE.Mesh( geometry, material );
 			cube.position.y = -1;
 			scene.add( cube );
-
+			var light = new THREE.light();
+			light.position.y = 1;
+			scene.add(light);
 			camera.position.z = 5;
 
 			var animate = function () {
