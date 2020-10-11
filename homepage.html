@@ -9,45 +9,80 @@
         </style>
     </head>
     <body>
+    <canvas id="myCanvas"></canvas>
 		<script src="js/three.js"></script>
 		<script src="js/GLTFLoader.js"></script>
-		<script>
-			var loader = new THREE.GLTFLoader();
-			loader.load('assets/models/donut.glb', function(gltf){
-				scene.add(gltf.scene);
-			}, undefined, function(error) {
-				console.error(error);
-			}
-			);
-			var scene = new THREE.Scene();
-			// scene.background.setrgb(255,255,255)
+        <script>
 
-			var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+            var renderer,
+                scene,
+                camera,
+                myCanvas = document.getElementById('myCanvas');
 
-			var renderer = new THREE.WebGLRenderer();
-			renderer.setSize( window.innerWidth, window.innerHeight );
-			document.body.appendChild( renderer.domElement );
+            //RENDERER
+            renderer = new THREE.WebGLRenderer({
+                canvas: myCanvas,
+                antialias: true
+            });
+            renderer.setClearColor(0x000000);
+            renderer.setPixelRatio(window.devicePixelRatio);
+            renderer.setSize(window.innerWidth, window.innerHeight);
 
-			var geometry = new THREE.BoxGeometry();
-			var material = new THREE.MeshBasicMaterial( { color: 0xbbbbbb } );
-			var cube = new THREE.Mesh( geometry, material );
-			cube.position.y = -1;
-			scene.add( cube );
-			var light = new THREE.light();
-			light.position.y = 1;
-			scene.add(light);
-			camera.position.z = 5;
+            //CAMERA
+            camera = new THREE.PerspectiveCamera(35, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
-			var animate = function () {
-				requestAnimationFrame( animate );
+            //SCENE
+            scene = new THREE.Scene();
 
-				cube.rotation.x += 0.01;
-				cube.rotation.y += 0.01;
+            //LIGHTS
+            var light = new THREE.AmbientLight(0xffffff, 0.5);
+            scene.add(light);
 
-				renderer.render( scene, camera );
-			};
+            var light2 = new THREE.PointLight(0xffffff, 0.5);
+            scene.add(light2);
 
-			animate();
-		</script>
+            var loader = new THREE.GLTFLoader();
+
+            loader.load('assets/models/donut.glb', handle_load);
+
+            var mesh;
+
+            function handle_load(gltf) {
+
+                console.log(gltf);
+                mesh = gltf.scene;
+                console.log(mesh.children[0]);
+                mesh.children[0].material = new THREE.MeshLambertMaterial();
+                scene.add( mesh );
+                mesh.position.z = -10;
+                mesh.scale.set(10,10,10);
+                mesh.rotateX(45)
+            }
+
+
+            //RENDER LOOP
+            render();
+
+            var delta = 0;
+            var prevTime = Date.now();
+
+            function render() {
+
+                delta += 0.1;
+
+                if (mesh) {
+
+                    mesh.rotation.y += 0.01;
+
+                    //animation mesh
+                    // mesh.morphTargetInfluences[ 0 ] = Math.sin(delta) * 20.0;
+                }
+
+                renderer.render(scene, camera);
+
+                requestAnimationFrame(render);
+            }
+
+        </script>
     </body>
 </html>
