@@ -7,7 +7,7 @@
     "angular": "^1.8.1",
     "node": "^14.13.0",
     "package": "^1.0.1",
-    "three": "^0.121.1"
+    "three": "^0.125.0"
   },
   "devDependencies": {},
   "scripts": {
